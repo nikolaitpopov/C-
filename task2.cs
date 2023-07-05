@@ -43,4 +43,18 @@ else
     Console.WriteLine("Max: '"+c);
     }
 }
-
+if (N==6)
+{
+    Console.WriteLine("Введите a:");
+    a = int.Parse(Console.ReadLine());
+    if (a%2==0)
+    {
+        Console.WriteLine("Четное!!!!!!!!!!!!!!");
+    
+    }
+    else
+        {
+        Console.WriteLine("Неа, нифига не четное!!");
+    
+    }
+}
