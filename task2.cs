@@ -1,13 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Введите номер задания:");
-int N = int.Parse(Console.ReadLine());
+int N=0;
+int a=0; 
+int b=0;
+int c=0;
+int max=0;
+N = int.Parse(Console.ReadLine());
 
 if (N==2)
 {
 Console.WriteLine("Введите a:");
-int a = int.Parse(Console.ReadLine());
+a = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите b:");
-int b = int.Parse(Console.ReadLine());
+b = int.Parse(Console.ReadLine());
 if (a>b){Console.WriteLine("Max: "+ a);}
 else {Console.WriteLine("Max: '"+b);}
 }
@@ -16,11 +21,11 @@ else {Console.WriteLine("Max: '"+b);}
 if (N==4)
 {
 Console.WriteLine("Введите a:");
-int a = int.Parse(Console.ReadLine());
+a = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите b:");
-int b = int.Parse(Console.ReadLine());
+b = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите c:");
-int c = int.Parse(Console.ReadLine());
+c = int.Parse(Console.ReadLine());
 if (a>b)
 {
     max=a;
@@ -38,3 +43,4 @@ else
     Console.WriteLine("Max: '"+c);
     }
 }
+
