@@ -58,3 +58,13 @@ if (N==6)
     
     }
 }
+if (N==8)
+{
+    Console.WriteLine("Введите a:");
+    a = int.Parse(Console.ReadLine());
+    string answer = "";
+    for (int i=0; i<a;)
+    {answer = answer + " ,"+i;}
+    Console.WriteLine(answer);
+
+}
