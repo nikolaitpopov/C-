@@ -64,7 +64,7 @@ if (N==8)
     a = int.Parse(Console.ReadLine());
     string answer = "";
     for (int i=0; i<a;)
-    {answer = answer + " ,"+i;}
+    {answer = answer + " ,"+i;i=i+2;}
     Console.WriteLine(answer);
 
 }
