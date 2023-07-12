@@ -69,7 +69,7 @@ switch (N)
         Console.WriteLine("Введите b.z:");
         pb['z'] = double.Parse(Console.ReadLine());
 
-        Console.WriteLine("Расстояние между точками:" + Math.Sqrt(Math.Pow(pa['x'] - pb['x'], 2) + Math.Pow(pa['y'] - pb['y'], 2) + Math.Pow(pa['z'] - pb['z'], 2)));
+        Console.WriteLine("Расстояние между точками: " + Math.Sqrt(Math.Pow(pa['x'] - pb['x'], 2) + Math.Pow(pa['y'] - pb['y'], 2) + Math.Pow(pa['z'] - pb['z'], 2)));
 
         break;
 
@@ -84,8 +84,11 @@ switch (N)
         {
             Console.WriteLine("некорректный ввод.");
         }
-        for (int i = 0;i<=Num;i++){
-            
+        str="";
+        for (int i = 0;i<Num;i++){
+            str = str + Math.Pow(i,3)+ ", ";
         }
+        str = str + Math.Pow(Num,3);
+        Console.WriteLine(str);
         break;
 }
