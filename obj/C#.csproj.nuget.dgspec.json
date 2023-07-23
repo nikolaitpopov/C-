@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\nt.popov\\C#\\C#.csproj": {}
+    "C:\\Users\\nt.popov\\C#\\C#.csproj": {}
   },
   "projects": {
-    "c:\\Users\\nt.popov\\C#\\C#.csproj": {
+    "C:\\Users\\nt.popov\\C#\\C#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\nt.popov\\C#\\C#.csproj",
+        "projectUniqueName": "C:\\Users\\nt.popov\\C#\\C#.csproj",
         "projectName": "C#",
-        "projectPath": "c:\\Users\\nt.popov\\C#\\C#.csproj",
+        "projectPath": "C:\\Users\\nt.popov\\C#\\C#.csproj",
         "packagesPath": "C:\\Users\\nt.popov\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\nt.popov\\C#\\obj\\",
+        "outputPath": "C:\\Users\\nt.popov\\C#\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nt.popov\\AppData\\Roaming\\NuGet\\NuGet.Config"
