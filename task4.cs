@@ -93,6 +93,131 @@ void Task41()
 void Task43(){
 
 }
+
+void Task50(){
+    while (!CorrectInput)
+    {
+        Console.WriteLine("Введите число m:");
+        str = Console.ReadLine();
+        if ((CorrectInput = int.TryParse(str, out m)))
+        {
+            CorrectInput = true;
+        }
+        else
+        {
+            Console.WriteLine("некорректный ввод.");
+        }
+    }
+    CorrectInput = false;
+    {
+        Console.WriteLine("Введите число n:");
+        str = Console.ReadLine();
+        if ((CorrectInput = int.TryParse(str, out n)))
+        {
+            CorrectInput = true;
+        }
+        else
+        {
+            Console.WriteLine("некорректный ввод.");
+        }
+    }
+    Random rnd = new Random();
+
+    List<List<float>> array_mn = new List<List<float>>();
+
+    for (int i = 0; i < m; i++)
+    {
+        List<float> array_n = new List<float>();
+        for (int j = 0; j < n; j++)
+        {
+            array_n.Add(rnd.Next(-9999, 9999) / 100);
+            Console.WriteLine(array_n.ElementAt(j));
+        }
+        array_mn.Add(array_n);
+    }
+    CorrectInput = false;
+     while (!CorrectInput)
+    {
+        Console.WriteLine("Введите номер строки:");
+        str = Console.ReadLine();
+        if ((CorrectInput = int.TryParse(str, out m)))
+        {
+            CorrectInput = true;
+        }
+        else
+        {
+            Console.WriteLine("некорректный ввод.");
+        }
+    }
+    CorrectInput = false;
+    {
+        Console.WriteLine("Введите номер столбца:");
+        str = Console.ReadLine();
+        if ((CorrectInput = int.TryParse(str, out n)))
+        {
+            CorrectInput = true;
+        }
+        else
+        {
+            Console.WriteLine("некорректный ввод.");
+        }
+    } 
+    if ((m>array_mn.Count)|(n>array_mn[1].Count)) {
+        Console.WriteLine("Ах..Такого элемента в массиве нету...");
+    }
+    else {
+        Console.WriteLine(array_mn[m][n]);
+    }
+}
+
+
+void Task52(){
+    while (!CorrectInput)
+    {
+        Console.WriteLine("Введите число m:");
+        str = Console.ReadLine();
+        if ((CorrectInput = int.TryParse(str, out m)))
+        {
+            CorrectInput = true;
+        }
+        else
+        {
+            Console.WriteLine("некорректный ввод.");
+        }
+    }
+    CorrectInput = false;
+    {
+        Console.WriteLine("Введите число n:");
+        str = Console.ReadLine();
+        if ((CorrectInput = int.TryParse(str, out n)))
+        {
+            CorrectInput = true;
+        }
+        else
+        {
+            Console.WriteLine("некорректный ввод.");
+        }
+    }
+    Random rnd = new Random();
+
+    List<List<float>> array_mn = new List<List<float>>();
+
+    for (int i = 0; i < m; i++)
+    {
+        List<float> array_n = new List<float>();
+        for (int j = 0; j < n; j++)
+        {
+            array_n.Add(rnd.Next(0, 99));
+
+        }
+        array_mn.Add(array_n);
+        Console.WriteLine("Среднее значение строки "+ i + " : "+ array_n.Average());
+    }
+
+}
+
+
+
 switch (N)
 {
     case 25:
@@ -185,7 +310,15 @@ switch (N)
     case 41:
         Task41();
     break;
-        case 43:
+    case 43:
         Task43();
+    break;
+    case 50:
+Task50();
+
+    break;
+
+    case 52:
+Task52();
     break;
 }
